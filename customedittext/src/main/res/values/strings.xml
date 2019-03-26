@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">CustomEditText</string>
+    <string name="label_hide">HIDE</string>
+    <string name="label_show">Show</string>
+</resources>

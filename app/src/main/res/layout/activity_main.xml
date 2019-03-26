@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimaryDark"
+    android:orientation="vertical"
+    android:padding="@dimen/_10sdp"
+    tools:context=".MainActivity">
+
+    <com.lib.customedittext.CustomEditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/_8sdp"
+        android:imeOptions="actionNext"
+        android:inputType="text"
+        android:maxLength="15"
+        app:edt_background="@drawable/round_editbox"
+        app:edt_hint="Enter Name"
+        app:edt_padding="@dimen/_10sdp"
+        app:edt_text_color="@android:color/black"
+        app:edt_text_size="@dimen/_12ssp" />
+
+    <com.lib.customedittext.CustomEditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/_8sdp"
+        android:imeOptions="actionNext"
+        android:inputType="textPassword"
+        android:maxLength="15"
+        app:edt_background="@drawable/round_editbox"
+        app:edt_hint="Enter Password"
+        app:edt_padding="@dimen/_10sdp"
+        app:edt_password_toggle="true"
+        app:edt_text_color="@android:color/black"
+        app:edt_text_size="@dimen/_12ssp" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/_8sdp"
+        android:background="@drawable/round_editbox"
+        android:paddingStart="@dimen/_5sdp"
+        android:paddingLeft="@dimen/_5sdp"
+        android:paddingEnd="0dp"
+        android:paddingRight="0dp">
+
+        <com.lib.customedittext.CustomEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:imeOptions="actionNext"
+            android:inputType="text"
+            android:maxLength="15"
+            app:edt_background="@android:color/transparent"
+            app:edt_drawable_start="@android:drawable/ic_dialog_email"
+            app:edt_hint="Enter Name"
+            app:edt_padding="@dimen/_10sdp"
+            app:edt_show_drawable="true"
+            app:edt_text_color="@android:color/black"
+            app:edt_text_size="@dimen/_12ssp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/_8sdp"
+        android:background="@drawable/round_editbox"
+        android:paddingStart="@dimen/_5sdp"
+        android:paddingLeft="@dimen/_5sdp"
+        android:paddingEnd="0dp"
+        android:paddingRight="0dp">
+
+        <com.lib.customedittext.CustomEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:imeOptions="actionNext"
+            android:inputType="textPassword"
+            android:maxLength="15"
+            app:edt_background="@android:color/transparent"
+            app:edt_drawable_start="@android:drawable/ic_lock_lock"
+            app:edt_hint="Enter Name"
+            app:edt_padding="@dimen/_10sdp"
+            app:edt_password_toggle="true"
+            app:edt_show_drawable="true"
+            app:edt_text_color="@android:color/black"
+            app:edt_text_size="@dimen/_12ssp" />
+    </RelativeLayout>
+
+    <com.lib.customedittext.CustomEditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/_8sdp"
+        android:imeOptions="actionDone"
+        android:inputType="text"
+        android:maxLength="15"
+        app:edt_background_tint="@color/offWhite"
+        app:edt_hint="Enter Name"
+        app:edt_padding="@dimen/_10sdp"
+        app:edt_text_color="@android:color/white"
+        app:edt_text_hint_color="@color/offWhite"
+        app:edt_text_size="@dimen/_12ssp" />
+
+    <com.lib.customedittext.CustomEditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/_8sdp"
+        android:imeOptions="actionDone"
+        android:inputType="textPassword"
+        android:maxLength="15"
+        app:edt_background_tint="@color/offWhite"
+        app:edt_hint="Enter Password"
+        app:edt_padding="@dimen/_10sdp"
+        app:edt_password_toggle="true"
+        app:edt_text_color="@android:color/white"
+        app:edt_text_hint_color="@color/offWhite"
+        app:edt_text_size="@dimen/_12ssp"
+        app:edt_toggle_text_color="@android:color/white" />
+</LinearLayout>
