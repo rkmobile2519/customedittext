@@ -6,9 +6,7 @@ import android.graphics.Color;
 import android.graphics.PorterDuff;
 import android.graphics.Typeface;
 import android.graphics.drawable.Drawable;
-import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
-import android.support.annotation.StringRes;
 import android.support.design.widget.TextInputEditText;
 import android.text.InputFilter;
 import android.text.Selection;
@@ -61,15 +59,15 @@ public class CustomEditText extends FrameLayout {
     private int padding;
     private int padding_start, padding_end, padding_top, padding_bottom;
 
-    public CustomEditText(@NonNull Context context) {
+    public CustomEditText(Context context) {
         this(context, null);
     }
 
-    public CustomEditText(@NonNull Context context, @Nullable AttributeSet attrs) {
+    public CustomEditText(Context context, @Nullable AttributeSet attrs) {
         this(context, attrs, 0);
     }
 
-    public CustomEditText(@NonNull Context context, @Nullable AttributeSet attrs, int defStyleAttr) {
+    public CustomEditText(Context context, @Nullable AttributeSet attrs, int defStyleAttr) {
         super(context, attrs, defStyleAttr);
 
         View view = LayoutInflater.from(context).inflate(R.layout.widget_phone_layout, this, true);
@@ -368,7 +366,7 @@ public class CustomEditText extends FrameLayout {
      * Sets the text to be displayed when the text of the TextView is empty,
      * from a resource.
      */
-    public final void setHint(@StringRes int resid) {
+    public final void setHint(int resid) {
         setHint(getContext().getResources().getString(resid));
     }
 
