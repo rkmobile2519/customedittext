@@ -58,8 +58,8 @@ ext {
 
     libraryDescription = 'This view is a container that supports diagonal scroll and fling gesture. It is based on AOSP HorizontalScrollView.'
 
-    siteUrl = 'https://gitlab.com/kailash.lakhera/custom-edit-text'
-    gitUrl = 'https://gitlab.com/kailash.lakhera/custom-edit-text.git'
+    siteUrl = 'https://github.com/kailashchouhan1306/customedittext'
+    gitUrl = 'https://github.com/kailashchouhan1306/customedittext.git'
 
     libraryVersion = '1.0'
 
