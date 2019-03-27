@@ -11,9 +11,7 @@ android {
         targetSdkVersion 28
         versionCode 1
         versionName "1.0"
-
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
-
     }
 
     buildTypes {
@@ -22,7 +20,6 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
         }
     }
-
 }
 
 buildscript {
@@ -35,22 +32,27 @@ buildscript {
     }
 }
 
+//configurations {
+//    javadocDeps
+//}
+
 dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
     implementation 'com.android.support:design:28.0.0'
     implementation 'com.android.support:appcompat-v7:28.0.0'
     implementation 'com.intuit.sdp:sdp-android:1.0.6'
     implementation 'com.intuit.ssp:ssp-android:1.0.6'
+//    javadocDeps 'com.android.support:support-annotations:28.0.0'
     testImplementation 'junit:junit:4.12'
     androidTestImplementation 'com.android.support.test:runner:1.0.2'
     androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
 }
 
 ext {
-    bintrayRepo = 'maven'
+    bintrayRepo = ''
     bintrayName = 'CustomEditText'
 
-    publishedGroupId = 'ua.org.tenletters.widget'
+    publishedGroupId = 'com.widget'
     libraryName = 'CustomEditText'
     artifact = 'CustomEditText'
 
@@ -59,7 +61,7 @@ ext {
     siteUrl = 'https://gitlab.com/kailash.lakhera/custom-edit-text'
     gitUrl = 'https://gitlab.com/kailash.lakhera/custom-edit-text.git'
 
-    libraryVersion = '0.3.3'
+    libraryVersion = '1.0'
 
     developerId = 'rkmobile'
     developerName = 'RK'
@@ -111,18 +113,19 @@ task sourcesJar(type: Jar) {
     from android.sourceSets.main.java.srcDirs
 }
 
-task javadoc(type: Javadoc) {
-    source = android.sourceSets.main.java.srcDirs
-    classpath += project.files(android.getBootClasspath().join(File.pathSeparator))
-}
+//task javadoc(type: Javadoc) {
+//    source = android.sourceSets.main.java.srcDirs
+//    classpath += project.files(android.getBootClasspath().join(File.pathSeparator))
+////    classpath += configurations.javadocDeps
+//}
 
-task javadocJar(type: Jar, dependsOn: javadoc) {
-    classifier = 'javadoc'
-    from javadoc.destinationDir
-}
+//task javadocJar(type: Jar, dependsOn: javadoc) {
+//    classifier = 'javadoc'
+//    from javadoc.destinationDir
+//}
 
 artifacts {
-    archives javadocJar
+//    archives javadocJar
     archives sourcesJar
 }
 
