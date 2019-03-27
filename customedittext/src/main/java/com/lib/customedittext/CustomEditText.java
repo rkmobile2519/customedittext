@@ -30,8 +30,6 @@ import java.util.Hashtable;
 
 /**
  * @author Kailash Chouhan
- * @creationDate 05-Feb-18
- * Copyright © 2018 SynsoftGlobal. All rights reserved.
  */
 
 public class CustomEditText extends FrameLayout {
@@ -327,10 +325,7 @@ public class CustomEditText extends FrameLayout {
 
     /**
      * Change the editor type integer associated with the text view, which
-     * is reported to an Input Method Editor (IME) with {@link EditorInfo#imeOptions}
-     * when it has focus.
-     *
-     * @see EditorInfo
+     * is reported to an Input Method Editor (IME) with when it has focus.
      */
     public void setImeOptions(int imeOptions) {
         editText.setImeOptions(imeOptions);

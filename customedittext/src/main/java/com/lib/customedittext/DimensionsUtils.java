@@ -5,8 +5,6 @@ import android.support.annotation.DimenRes;
 
 /**
  * @author Kailash Chouhan
- * creationDate 07-Mar-18
- * Copyright © 2018 SynsoftGlobal. All rights reserved.
  */
 
 public class DimensionsUtils {
@@ -18,7 +16,7 @@ public class DimensionsUtils {
         return context.getResources().getDimension(resourceId);
     }
 
-    public static int getDimensionPixelSize(Context context, @DimenRes int resourceId) {
+    static int getDimensionPixelSize(Context context, @DimenRes int resourceId) {
         return context.getResources().getDimensionPixelSize(resourceId);
     }
 

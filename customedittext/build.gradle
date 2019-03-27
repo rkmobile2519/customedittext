@@ -27,14 +27,14 @@ buildscript {
         jcenter()
     }
     dependencies {
-        classpath 'com.github.dcendents:android-maven-gradle-plugin:1.4.1'
+        classpath 'com.github.dcendents:android-maven-gradle-plugin:2.0'
         classpath 'com.jfrog.bintray.gradle:gradle-bintray-plugin:1.7.3'
     }
 }
 
-//configurations {
-//    javadocDeps
-//}
+configurations {
+    javadocDeps
+}
 
 dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
@@ -42,7 +42,7 @@ dependencies {
     implementation 'com.android.support:appcompat-v7:28.0.0'
     implementation 'com.intuit.sdp:sdp-android:1.0.6'
     implementation 'com.intuit.ssp:ssp-android:1.0.6'
-//    javadocDeps 'com.android.support:support-annotations:28.0.0'
+    javadocDeps 'com.android.support:support-annotations:28.0.0'
     testImplementation 'junit:junit:4.12'
     androidTestImplementation 'com.android.support.test:runner:1.0.2'
     androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
@@ -58,10 +58,10 @@ ext {
 
     libraryDescription = 'This view is a container that supports diagonal scroll and fling gesture. It is based on AOSP HorizontalScrollView.'
 
-    siteUrl = 'https://github.com/kailashchouhan1306/customedittext'
-    gitUrl = 'https://github.com/kailashchouhan1306/customedittext.git'
+    siteUrl = 'https://github.com/rkmobile2519/customedittext'
+    gitUrl = 'https://github.com/rkmobile2519/customedittext/issues'
 
-    libraryVersion = '1.0'
+    libraryVersion = '1.0.0'
 
     developerId = 'rkmobile'
     developerName = 'RK'
@@ -113,19 +113,19 @@ task sourcesJar(type: Jar) {
     from android.sourceSets.main.java.srcDirs
 }
 
-//task javadoc(type: Javadoc) {
-//    source = android.sourceSets.main.java.srcDirs
-//    classpath += project.files(android.getBootClasspath().join(File.pathSeparator))
-////    classpath += configurations.javadocDeps
-//}
+task javadoc(type: Javadoc) {
+    source = android.sourceSets.main.java.srcDirs
+   // classpath += project.files(android.getBootClasspath().join(File.pathSeparator))
+    classpath += configurations.javadocDeps
+}
 
-//task javadocJar(type: Jar, dependsOn: javadoc) {
-//    classifier = 'javadoc'
-//    from javadoc.destinationDir
-//}
+task javadocJar(type: Jar, dependsOn: javadoc) {
+    classifier = 'javadoc'
+    from javadoc.destinationDir
+}
 
 artifacts {
-//    archives javadocJar
+   archives javadocJar
     archives sourcesJar
 }
 
