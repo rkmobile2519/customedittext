@@ -4,7 +4,23 @@ A very simple and light weighted editbox for android.
 
 # Usage
 
-Add edittext to your xml layout.
+Step 1 : Add it in your root build.gradle at the end of repositories:
+
+	allprojects {
+		repositories {
+			...
+			maven { url 'https://jitpack.io' }
+		}
+	}
+	
+Step 2 : Add the dependency
+
+	dependencies {
+	        implementation 'com.github.rkmobile2519:customedittext:Tag'
+	}
+
+
+Step 3 : Add edittext to your xml layout.
 
     <?xml version="1.0" encoding="utf-8"?>
     <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
