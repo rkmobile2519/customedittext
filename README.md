@@ -47,8 +47,7 @@ Step 3 : Add edittext to your xml layout.
           app:edt_text_size="@dimen/_12ssp" />
 
     </LinearLayout>
-    
-    You can also change attributes for Custom EditText Programatically.
+
 	
 	
 # Custom Attributes
