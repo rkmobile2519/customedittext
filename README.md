@@ -17,6 +17,8 @@ Step 1 : Add it in your root build.gradle at the end of repositories:
 	
 Step 2 : Add the dependency
 
+[![](https://jitpack.io/v/rkmobile2519/currencyView.svg)](https://jitpack.io/#rkmobile2519/customedittext)
+
 	dependencies {
 	        implementation 'com.github.rkmobile2519:customedittext:1.0.0'
 	}
