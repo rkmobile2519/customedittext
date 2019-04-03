@@ -2,7 +2,7 @@
 
 A very simple and light weighted editbox for android.
 
-![1](https://user-images.githubusercontent.com/48977807/55465922-c6bea780-561b-11e9-8c69-a3e20c397de6.png)
+![1](https://user-images.githubusercontent.com/48977807/55466268-7dbb2300-561c-11e9-971b-10ccf7310950.png)
 
 # Usage
 
