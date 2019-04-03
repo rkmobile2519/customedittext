@@ -2,6 +2,8 @@
 
 A very simple and light weighted editbox for android.
 
+![1](https://user-images.githubusercontent.com/48977807/55465922-c6bea780-561b-11e9-8c69-a3e20c397de6.png)
+
 # Usage
 
 Step 1 : Add it in your root build.gradle at the end of repositories:
