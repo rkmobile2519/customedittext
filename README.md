@@ -2,6 +2,8 @@
 
 A very simple and light weighted editbox for android.
 
+[![Android Arsenal]( https://img.shields.io/badge/Android%20Arsenal-CustomEditText-green.svg?style=flat )]( https://android-arsenal.com/details/1/7596 )
+
 ![1](https://user-images.githubusercontent.com/48977807/55466268-7dbb2300-561c-11e9-971b-10ccf7310950.png)
 
 # Usage
